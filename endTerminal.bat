@@ -1,0 +1,1 @@
+start cmd /k curl -d end http://localhost:8080/

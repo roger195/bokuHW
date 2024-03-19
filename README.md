@@ -1,6 +1,19 @@
-#### Note when testing the application
-Keep in mind that different servlet implementations support different versions of the Servlet API.
-For example list of supported versions for 
-Jetty can be found [here](https://eclipse.dev/jetty/)
-and Tomcat [here](https://tomcat.apache.org/whichversion.html).
-Use whichever Servlet implementation you like.
+# Boku SWE homework
+
+---
+This application sums up all the numbers it gets from post requests and returns the sum to 
+all requests after it receives a post request with 'end'.
+
+To run program:
+```bash
+docker-compose up
+```
+
+To test the program on a Windows machine you can use scripts to create 20 requests where each request sends the number
+1 for a total of 20. Then you can run the 'end' script that sends the sum to all open terminals.
+```bash
+./createTerminals.bat
+```
+```bash
+./endTerminal.bat
+```
